@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css?family=New+Rocker");
+@import url("https://fonts.cdnfonts.com/css/kankin");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {

@@ -1,0 +1,99 @@
+<template>
+    <header class="relative h-fit duration-700 transform opacity-0 transition-all translate-y-12 ease-out lg:mx-16"
+        data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+        <div class="w-full h-full bg-white">
+            <div class="pt-2 flex items-center">
+                <span class="w-full border-t border-solid border-black border-"></span>
+                <span class="hidden md:block mx-8 min-w-fit">MASARYKOVO GYMNÁZIUM VSETÍN</span>
+                <span class="w-full border-t border-solid border-blue-dark"></span>
+            </div>
+            <div class="flex justify-center mt-2">
+                <!--a vertical line, quote, vertical lite, title "TGM", vertical line, quote author, vertical line -->
+                <div class="xs:border-r border-solid border-black"></div>
+                <div class="block w-1/6 text-center my-auto text-xs md:text-md xl:text-lg font-pt-serif">
+                    {{ quote.content }}
+                </div>
+                <div class="xs:border-r border-solid border-black"></div>
+
+
+                <div
+                    class="flex w-1/4 xs:w-1/2 text-center text-[64px] md:text-[112px] my-auto mx-8 align-middle justify-center">
+                    <a href="/">
+                        <div class="my-auto font-kankin">TGM</div>
+                    </a>
+                    <svg class="transition ease-in-out delay-100 fill-black hover:scale-110 hidden md:block" width="98"
+                        height="130" viewBox="0 0 160 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="/">
+                            <path
+                                d="M116.972 162.442C113.692 151.729 99.4448 149.381 87.9447 149.381C87.9447 149.381 82.6632 149.779 80.4909 152.106C78.3187 149.779 73.0371 149.381 73.0371 149.381C61.537 149.381 47.311 151.708 44.01 162.442C41.8165 169.444 46.2249 182.17 46.7786 189.151C50.6119 181.688 52.0388 172.715 60.9833 169.423C77.6585 163.322 80.0011 157.767 80.0011 157.767C80.1715 157.515 80.3418 157.285 80.4909 157.054C80.64 157.285 80.7891 157.515 80.9807 157.767C80.9807 157.767 83.3234 163.343 99.9985 169.423C108.964 172.694 110.37 181.688 114.203 189.151C114.757 182.149 119.165 169.423 116.972 162.442Z" />
+                            <path
+                                d="M105.684 131.057C95.3981 131.057 87.0498 123.531 87.0498 114.243C87.0498 104.956 95.3981 97.4295 105.684 97.4295C115.97 97.4295 124.319 104.956 124.319 114.243C124.319 123.531 115.97 131.057 105.684 131.057ZM53.231 131.057C42.9448 131.057 34.5966 123.531 34.5966 114.243C34.5966 104.956 42.9448 97.4295 53.231 97.4295C63.5172 97.4295 71.8654 104.956 71.8654 114.243C71.8654 123.531 63.5172 131.057 53.231 131.057ZM127.385 114.18C127.109 114.18 126.853 114.222 126.64 114.285L126.47 111.203C124.851 102.147 116.162 95.2281 105.684 95.2281C97.9962 95.2281 91.2665 98.9599 87.5822 104.516C86.9433 103.509 84.6007 100.427 79.4683 100.448C74.8256 100.49 72.3552 103.132 71.4182 104.683C67.7765 99.0228 60.9829 95.2281 53.2097 95.2281C42.7105 95.2281 34.0216 102.147 32.4243 111.203H32.3817C32.3817 111.644 32.3391 112.084 32.3178 112.503C31.9984 112.315 31.5938 112.21 31.1039 112.21C28.1437 112.21 28.1437 116.361 31.1039 116.361C31.5512 116.361 31.9558 116.256 32.2753 116.088C32.6799 119.799 34.2558 123.216 36.6836 125.984C35.0864 126.969 35.5123 129.799 37.9614 129.799C38.8559 129.799 39.4735 129.422 39.8355 128.898C43.4772 131.623 48.1411 133.238 53.231 133.238C64.8589 133.238 74.2932 124.726 74.2932 114.222C74.2932 113.866 74.2506 113.51 74.2293 113.153C74.2293 113.153 74.2293 111.581 73.846 110.323C73.5053 108.855 72.9728 107.451 72.2914 106.13C72.909 104.683 74.8469 101.392 79.4896 101.455C83.5359 101.518 85.8146 104.075 86.8582 105.711C86.0489 107.157 85.4526 108.709 85.0693 110.323C84.6646 111.581 84.6859 113.153 84.6859 113.153C84.6646 113.51 84.622 113.866 84.622 114.222C84.622 124.726 94.0564 133.238 105.684 133.238C110.817 133.238 115.502 131.581 119.144 128.835C119.506 129.317 120.102 129.653 120.954 129.653C123.36 129.653 123.808 126.906 122.317 125.879C124.255 123.636 125.639 120.973 126.299 118.08C126.597 118.227 126.959 118.311 127.385 118.311C130.346 118.311 130.346 114.159 127.385 114.159" />
+                            <path
+                                d="M80.5764 208.481C84.0052 207.768 85.7515 202.862 85.7515 202.862C91.7145 193.009 102.98 171.918 82.4505 175.44H78.7023C58.1725 171.918 69.4384 193.03 75.4014 202.862C75.4014 202.862 77.1477 207.789 80.5764 208.481Z" />
+                            <path
+                                d="M159.799 65.3951C156.967 54.2208 132.603 61.5795 132.603 61.5795C132.944 72.7538 125.32 79.3159 114.714 81.7688C95.2919 85.3119 72.1852 86.3811 49.2063 82.5654C21.9894 77.6596 25.8866 61.5795 25.8866 61.5795C25.8866 61.5795 19.5403 60.7619 11.405 58.8541C-8.03866 55.5207 3.26977 73.2989 3.26977 73.2989C3.26977 73.2989 18.9014 94.5155 78.8723 93.7398C138.524 92.9641 162.61 76.5695 159.778 65.3742" />
+                            <path
+                                d="M90.5641 72.4184C112.116 71.0767 128.025 66.066 132.603 59.0637C132.603 59.0637 132.241 53.3822 131.177 31.6835C129.409 7.32224 104.343 0.298984 75.0177 0.969862C45.6925 1.64074 33.3192 12.6473 29.784 25.6666C26.2488 38.6858 25.8867 59.0637 25.8867 59.0637C33.6599 71.4121 68.9908 73.7602 90.5428 72.4184" />
+                        </a>
+                    </svg>
+                </div>
+                <div class="xs:border-r border-solid border-black"></div>
+                <div class="block w-1/6 text-center my-auto text-xs md:text-md xl:text-lg font-pt-serif">
+                    -"Neznámý" autor
+                </div>
+                <div class="xs:border-r border-solid border-black"></div>
+            </div>
+            <!--the navmenu-->
+            <div
+                class="h-full flex items-center w-full border-y border-solid border-black border- mb-8 text-sm md:text-lg font-pt-serif mt-4">
+                <span
+                    class="ml-2 sm:ml-8 md:ml-24 h-full w-1/3 border-x border-solid border-black border- opacity-40 text-center py-2">????</span>
+                <span class="w-1/3 md:w-1/4 h-full border-r border-solid border-black border- text-center py-2"><a
+                        href="/ankety">ANKETY</a></span>
+                <span
+                    class="hidden md:block w-1/4 h-full border-r border-solid border-black text-center py-2 transition ease-in-out delay-100 duration-300 hover:text-white hover:bg-[#002f76]"><a
+                        href="/">STUDENTSKÝ
+                        MĚSÍČNÍK</a></span>
+                <span
+                    class="hidden md:block w-1/4 h-full border-r border-solid border-black border- text-center py-2 opacity-40">ROZHOVORY</span>
+                <span
+                    class="mr-2 sm:mr-8 md:mr-24 h-full mx-auto w-1/3 border-r border-solid border-black border- py-2 text-center"><a
+                        href="/#about">O
+                        NÁS</a></span>
+            </div>
+        </div>
+    </header>
+</template>
+
+<script lang="ts">
+import json from "../assets/json/quotes.json";
+
+export default {
+    name: "index",
+
+    data() {
+        return {
+            quote: {
+                content: "",
+                author: "",
+            },
+        };
+    },
+
+    mounted() {
+        this.getQuote();
+    },
+
+
+    methods: {
+        getQuote() {
+            //get quote from ./data/quotes.json
+            this.quote = json[Math.floor(Math.random() * json.length)];
+
+            this.quote.author = this.quote.author.replace(/<[^>]*>/g, "");
+            this.quote.content = this.quote.content.replace(/<[^>]*>/g, "");
+        },
+    },
+};
+
+</script>

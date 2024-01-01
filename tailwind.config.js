@@ -13,6 +13,15 @@ module.exports = {
   },
   plugins: [],
   theme: {
+    screens:
+    {
+      xxs: "420px",
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
     extend: {
       colors: {
         white: "#fff",
@@ -28,6 +37,9 @@ module.exports = {
         montserrat: "Montserrat",
         lora: "Lora",
         "kankin-free-font": "'Kankin FREE FONT'",
+        "new-rocker": "New Rocker",
+        "kankin": "Kankin",
+
       },
     },
     fontSize: {
